@@ -3,80 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>双语网站示例</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .language-switcher {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
-        .language-switcher button {
-            margin: 0 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        .hidden {
-            display: none;
-        }
-    </style>
+    <title>English Version</title>
+    <link rel="stylesheet" href="/css/language.css">
 </head>
 <body>
     <div class="language-switcher">
-        <button id="en-btn">English</button>
-        <button id="zh-btn">中文</button>
+        <span class="language-label en-label">EN</span>
+        <span class="language-label zh-label">CN</span>
+        <div class="switch"></div>
     </div>
 
-    <!-- English Content -->
-    <div id="content-en">
-        <h1>Welcome to My Website</h1>
-        <p>This is the English version of the website.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien neque.</p>
-        <!-- 其他英文内容 -->
-    </div>
+    <h1>Welcome to My Website</h1>
+    <p>This is the English version of the website.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien neque.</p>
+    <!-- 其他英文内容 -->
 
-    <!-- 中文内容 -->
-    <div id="content-zh" class="hidden">
-        <h1>欢迎来到我的网站</h1>
-        <p>这是网站的中文版。</p>
-        <p>这里是中文内容，可以根据需要添加更多内容。</p>
-        <!-- 其他中文内容 -->
-    </div>
-
-    <script>
-        // 获取语言切换按钮
-        const enBtn = document.getElementById('en-btn');
-        const zhBtn = document.getElementById('zh-btn');
-
-        // 获取内容区域
-        const contentEn = document.getElementById('content-en');
-        const contentZh = document.getElementById('content-zh');
-
-        // 设置语言函数
-        function setLanguage(lang) {
-            if (lang === 'en') {
-                contentEn.classList.remove('hidden');
-                contentZh.classList.add('hidden');
-            } else if (lang === 'zh') {
-                contentEn.classList.add('hidden');
-                contentZh.classList.remove('hidden');
-            }
-            // 保存到 localStorage
-            localStorage.setItem('preferredLanguage', lang);
-        }
-
-        // 添加按钮点击事件
-        enBtn.addEventListener('click', () => setLanguage('en'));
-        zhBtn.addEventListener('click', () => setLanguage('zh'));
-
-        // 页面加载时设置语言
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-            setLanguage(savedLang);
-        });
-    </script>
+    <script src="/js/language.js"></script>
 </body>
 </html>
