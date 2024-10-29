@@ -21,6 +21,10 @@ body {
     z-index: 1001;
 }
 
+#spinner {
+    z-index: 500; /* 确保 spinner 的 z-index 值低于 language-switcher */
+}
+
 .language-switcher:hover {
     background-color: #ccc;
 }
