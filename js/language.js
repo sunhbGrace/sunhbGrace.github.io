@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setLanguage(lang) {
         if (lang === 'en') {
-            window.location.href = '/en/index.html';
+            window.location.href = 'en-index.html';
         } else if (lang === 'zh') {
-            window.location.href = '/cn/index.html';
+            window.location.href = 'cn-index.html';
         }
         localStorage.setItem('preferredLanguage', lang);
     }
