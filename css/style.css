@@ -49,6 +49,8 @@
     height: 46px;
 }
 
+
+
 .btn-xl-square {
     width: 56px;
     height: 56px;
@@ -86,6 +88,13 @@
     background: var(--bs-primary);
 }
 
+.custom-list {
+    font-size: 1.1em;
+    color: #555555;
+}
+.custom-list li {
+    margin-bottom: 0.5em; /* 设置每个 li 的底部间距 */
+}
 
 .pt-6 {
     padding-top: 60px;
