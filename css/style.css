@@ -96,6 +96,8 @@
     margin-bottom: 0.5em; /* 设置每个 li 的底部间距 */
 }
 
+
+
 .pt-6 {
     padding-top: 60px;
 }
@@ -138,11 +140,38 @@
     }
 }
 
+/* Reset margin and padding to avoid unwanted space */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Apply background color to the entire container */
+.container-fluid {
+    position: relative;
+    background-color: var(--bs-dark); /* 背景色 */
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    padding-left: 0; /* 清除左右间隙 */
+    padding-right: 0; /* 清除右侧间隙 */
+}
+
+/* Reset any border or margin that might cause the white line */
+.container-fluid .container {
+    padding-left: 0; /* 去除容器的左右填充 */
+    padding-right: 0; /* 去除容器的右侧填充 */
+}
+
+/* Ensure no gap on the sides in smaller screens */
 @media (max-width: 991px) {
     .container-fluid {
+        padding-left: 0; /* 去除左侧间隙 */
+        padding-right: 0; /* 去除右侧间隙 */
         border: none;
     }
 
+    /* Adjust padding for inner elements */
     .container-fluid .header-content,
     .container-fluid .about-header,
     .container-fluid .education-header,
@@ -156,6 +185,7 @@
         padding: 25px;
     }
 
+    /* Adjust inner content padding */
     .container-fluid .header-img,
     .container-fluid .about-content,
     .container-fluid .education-content,
@@ -170,6 +200,7 @@
         padding-top: 25px;
     }
 }
+
 
 
 /*** Navbar Start ***/

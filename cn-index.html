@@ -44,82 +44,132 @@
             </div>
         </div>
         <!-- Spinner End -->
-
-
-
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-section border-0">
-            <nav class="navbar navbar-light">
-                <div class="navbar-nav flex-column">
-                    <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
-                    <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
-                    <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
-                    <a href="#pigraBlog" class="nav-item nav-link"><span class="fa fa-blog"></span> Blog</a>
-                    <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
-                </div>
-            </nav>
+<!-- Header Navigation -->
+<header class="container-fluid bg-dark p-2 text-center" style="border-bottom: 1px solid white;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">导航栏</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pigraHome">个人介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educationSection">教育经历</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#researchSection">研究领域</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#honorSection">所获奖项</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievementSection">研究成果</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#newsSection">其他内容</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Navbar End -->
+    </nav>
+</header>
+
+<!-- Padding to prevent the content from being hidden -->
+<div style="height: 0px;"></div> <!-- Adjust this value based on your navbar height -->
+
+<style>
+    /* Reduce the navbar height and adjust font size */
+    .navbar {
+        padding: 0.5rem 0; /* Decrease padding */
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Make font smaller for a more compact navbar */
+    }
+
+    /* When hovering over a nav link, apply a subtle background */
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+        background-color: #343a40;
+        color: white !important;
+    }
+
+    /* Active link styling */
+    .navbar-nav .nav-link.active {
+        background-color: #212529;
+        color: white !important;
+    }
+</style>
+
+
 
 
 
 
         <!-- Header Start -->
-        <div class="container-fluid" id="pigraHome">
+        <div class="container-fluid" id="pigraHome" >
             <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
-                            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0">Pigra</h1>
-                            </a>
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-white sub-title">👋 你好，我是胡佳，这是我的个人主页</p>
-                                <!-- <h1 class="display-6 text-white mb-0">领导力与组织管理系    花旗集团国际商务讲席教授</h1> -->
+                <div class="row g-0 ">
+                    
+                    <div class="col-12 col-lg-3 d-flex flex-column">
+                        <div class="education-header bg-dark flex-grow-1 pt-6 pe-6 pb-6">
+                            <!-- 左侧内容 -->
+                        
+                            <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
+                                <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
+                                    <h1 class="display-6 text-white mb-0">Pigra</h1>
+                                </a>
+                                <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                                    <p class="text-white sub-title">👋 你好，我是胡佳，这是我的个人主页</p>
+                                    <!-- <h1 class="display-6 text-white mb-0">领导力与组织管理系    花旗集团国际商务讲席教授</h1> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
-                        <div class="hujia d-flex h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
-                                        <img src="img/hujia.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
+                        <div class="portfolio-content pt-6 ps-6 pb-6">
+                                <div class="row g-5">
+                                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
+                                            <img src="img/hujia.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
+                                        <h1 class="display-6 mb-4">清华大学经济管理学院</h1>
+                                        <p class="mb-4">领导力与组织管理系    花旗集团国际商务讲席教授
+                                        </p>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                            <p class="text-dark mb-0">李华楼B231</p>
+                                        </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-envelope text-primary me-3"></i>
+                                            <p class="text-dark mb-0">hujia@sem.tsinghua.edu.cn</p>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-envelope text-primary me-3"></i>
+                                            <p class="text-dark mb-0">jasminehu@sc.tsinghua.edu.cn</p>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                                            <p class="text-dark mb-0">(+86)(10)62796734</p>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-4">
+                                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                            <p class="text-dark mb-0"><a href=""></a>https://www.sem.tsinghua.edu.cn/info/1209/35666.htm</p>
+                                        </div>
+                                        <!-- <div class="d-flex">
+                                            <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                            <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                            <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                            <a class="btn btn-primary btn-sm-square me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                        </div> -->
                                     </div>
                                 </div>
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h1 class="display-6 mb-4">清华大学经济管理学院</h1>
-                                    <p class="mb-4">领导力与组织管理系    花旗集团国际商务讲席教授
-                                    </p>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">李华楼B231</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">hujia@sem.tsinghua.edu.cn</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">jasminehu@sc.tsinghua.edu.cn</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fa fa-phone-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">(+86)(10)62796734</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-4">
-                                        <i class="fab fa-firefox-browser text-primary me-3"></i>
-                                        <p class="text-dark mb-0">https://www.sem.tsinghua.edu.cn/info/1209/35666.htm</p>
-                                    </div>
-                                    <!-- <div class="d-flex">
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                    </div> -->
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,61 +178,10 @@
         <!-- Header End -->
 
 
-        <!-- About Start -->
-        <div class="container-fluid" id="pigraAbout">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">About Me</p>
-                                <h1 class="display-6 text-white mb-0">UI Designer based in NYC, USA since 2025</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="about-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-5">
-                                    <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <img src="img/about.jpg" class="img-fluid w-100" alt="Image">
-                                        <div class="sosial-icon">
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h4 class="mb-4">Hello, I'm Mezbah, Based in USA</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat, sint magni incidunt voluptatum eveniet numquam vel facilis sit similique a mollitia et dolorum aperiam repellendus ipsum, quidem nemo eligendi!
-                                    </p>
-                                    <div class="row g-4 mb-4">
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Phone :</strong> + 113-804-9098</p>
-                                            <p><strong class="fw-bold text-dark">skype :</strong> mezbah.wallas</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Address :</strong> 123 Street New York</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Nationality :</strong> New York, USA</p>
-                                            <p><strong class="fw-bold text-dark">Email :</strong> contact@mezbah.com</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Freelancer :</strong> Available</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="btn btn-primary py-2 px-4"> <i class="fas fa-download me-2"></i>Download My CV</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
 
 
         <!-- Education Start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="educationSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -195,37 +194,33 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="row g-4 align-items-center">
-                                    <!-- <div class="d-flex align-items-center mb-3"> -->
+                                    <div>
                                         <span class="fa fa-calendar me-1"></span>
-                                        <span>2001？ - 2005？</span>
-                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333; margin-right: 10px;">中央财经大学商学院（工商管理） 本科学位</p>
+                                        <span style="margin-right: 10px;">2001？ - 2005？</span>
+                                        
+                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;" >中央财经大学商学院（工商管理） 本科学位</p>
                                             
 
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333; margin-right: 10px;">中国人民大学劳动人事学院（人力资源管理）硕士学位</p>
-                                        <div class="d-flex align-items-center">
-                                            <span class="fa fa-calendar me-1"></span>
-                                            <span>2005 - 2007</span>
-                                        </div>
                                     </div>
                                 </div>
-                            
                             </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="row g-4 align-items-center">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333; margin-right: 10px;">美国伊利诺伊大学芝加哥分校商学院（组织行为和人力资源管理）博士学位</p>
-                                        <div class="d-flex align-items-center">
-                                            <span class="fa fa-calendar me-1"></span>
-                                            <span>2007 - 2012</span>
-                                        </div>
+                                    <div>
+                                        <span class="fa fa-calendar me-1"></span>
+                                        <span style="margin-right: 10px;">2005 - 2007</span>
+                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;" >中国人民大学劳动人事学院（人力资源管理）硕士学位</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="row g-4 align-items-center">
+                                    <div>
+                                        <span class="fa fa-calendar me-1"></span>
+                                        <span style="margin-right: 10px;">2007 - 2012</span>
+                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;" >美国伊利诺伊大学芝加哥分校商学院（组织行为和人力资源管理）博士学位</p>
                                     </div>
                                 </div>
                                 
@@ -238,7 +233,7 @@
         <!-- Education End -->
 
         <!-- Experience Start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="experienceSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -251,99 +246,86 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                            <!-- 显示的前三个项目 -->
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="row g-4 align-items-center">
-                                    <div class="d-flex align-items-center mb-3">
+                                    <div>
+                                        <span class="fa fa-calendar me-1"></span>
+                                        <span style="margin-right: 10px;">2012.07 - 2017.05</span>
                                         <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国圣母大学门多萨商学院助理教授</p>
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2012.07 - 2017.05
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
+                    
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="row g-4 align-items-center">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;"> 中国人民大学劳动人事学院（人力资源管理）硕士学位</p>
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2005 - 2007
-                                        </div>
+                                    <div>
+                                        <span class="fa fa-calendar me-1"></span>
+                                        <span style="margin-right: 10px;">2017.05 - 2017.06</span>
+                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国圣母大学门多萨商学院终身副教授</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
+                    
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="row g-4 align-items-center">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国伊利诺伊大学芝加哥分校商学院（组织行为和人力资源管理）博士学位</p>
+                                    <div>
+                                        <span class="fa fa-calendar me-1"></span>
+                                        <span style="margin-right: 10px;">2017.06 - 2022.04</span>
+                                        <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国俄亥俄州立大学费舍尔商学院终身副教授</p>
+                                        <p class="mb-0" style="margin-top: 2px;">在美国俄亥俄州立大学期间，负责博士招生，培养，和就业的过程。</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- 隐藏的部分 -->
+                            <div class="hidden-items" style="display: none;">
+                                <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="row g-4 align-items-center">
                                         <div>
-                                            <span class="fa fa-calendar me-1"></span> 2007 - 2012
+                                            <span class="fa fa-calendar me-1"></span>
+                                            <span style="margin-right: 10px;">2022.05 - 2024.05</span>
+                                            <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国俄亥俄州立大学费舍尔商学院终身正教授，德曼学者</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="row g-4 align-items-center">
+                                        <div>
+                                            <span class="fa fa-calendar me-1"></span>
+                                            <span style="margin-right: 10px;">2023.08 - 2024.05</span>
+                                            <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">清华大学经济管理学院和苏世民书院花旗集团国际商务访问讲席教授</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="row g-4 align-items-center">
+                                        <div>
+                                            <span class="fa fa-calendar me-1"></span>
+                                            <span style="margin-right: 10px;">2017.06 - 2022.04</span>
+                                            <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">清华大学经济管理学学院和苏世民书院双聘教授，花旗集团国际商务讲席教授</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="row g-4 align-items-center">
+                                        <div>
+                                            <span class="fa fa-calendar me-1"></span>
+                                            <span style="margin-right: 10px;">2024.05至今</span>
+                                            <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国俄亥俄州立大学费舍尔商学院终身副教授</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                    
+                            <!-- 展开按钮 -->
+                            <button id="showMoreBtn" class="link-button">展开更多</button>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="experience-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <!-- 显示的前三个经历 -->
-                                <div class="col-12 experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2012.07 - 2017.05
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">美国圣母大学门多萨商学院助理教授</h4>
-                                </div>
-                                <div class="col-12 experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2017.05 - 2017.06
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">美国圣母大学门多萨商学院终身副教授</h4>
-                                </div>
-                                <div class="col-12 experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2017.06 - 2022.04
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">美国俄亥俄州立大学费舍尔商学院终身副教授</h4>
-                                    <p class="mb-0">在美国俄亥俄州立大学期间，负责博士招生，培养，和就业的过程。</p>
-                                </div>
-        
-                                <!-- 其他经历（默认隐藏） -->
-                                <div class="col-12 experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s" style="display: none;">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2022.05 - 2024.05
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">美国俄亥俄州立大学费舍尔商学院终身正教授，德曼学者</h4>
-                                </div>
-                                <div class="col-12 experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s" style="display: none;">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2023.08 - 2024.05
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">清华大学经济管理学院和苏世民书院花旗集团国际商务访问讲席教授</h4>
-                                </div>
-                                <div class="col-12 experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s" style="display: none;">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2024.05至今
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">清华大学经济管理学学院和苏世民书院双聘教授，花旗集团国际商务讲席教授</h4>
-                                </div>
-                            </div>
-        
-                            <!-- 显示更多按钮 -->
-                            <button id="showMoreBtnExpr" class="btn btn-primary mt-4">显示更多</button>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -352,7 +334,7 @@
 
 
         <!-- research field -->
-        <div class="container-fluid" id="pigraHome">
+        <div class="container-fluid" id="researchSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -395,7 +377,7 @@
 
 
         <!-- class -->
-        <div class="container-fluid" id="pigraService">
+        <div class="container-fluid" id="classSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -492,7 +474,7 @@
         </div>
         
         <!-- 获奖信息 -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="honorSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -505,7 +487,7 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item py-2 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="row g-4 align-items-center">
                                     <h4 class="mb-2">国际奖项 （研究生期间除外）</h4>
                                     <ul class="custom-list">
@@ -519,7 +501,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="portfolio-item py-2 border-bottom wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="row g-4 align-items-center">
                                     <h4 class="mb-2">学院或者学校奖项 （研究生期间除外）</h4>
                                     <ul class="custom-list">
@@ -529,7 +511,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="row g-4 align-items-center">
                                     <h4 class="mb-2">学术组织</h4>
                                     <ul class="custom-list">
@@ -548,7 +530,7 @@
         </div>
 
           <!-- 学术成果 -->
-          <div class="container-fluid">
+          <div class="container-fluid" id="achievementSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -561,250 +543,69 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item py-2 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="row g-4 align-items-center">
-                                    <h4 class="mb-2">学术成果</h4>
-                                    在国际顶级管理学和应用心理学期刊，
-                                    比如Academy of Management Journal, Journal of Applied Psychology, 
-                                    Organizational Behavior and Human Decision Processes, and Personnel Psychology, 
-                                    发表三十多篇文章。其研究成果曾多次被西方主要媒体报道，其中包括《福布斯》，《财富》，《时代》等。
-                                    谷歌学术引用超过10,000次 (i10-index=29)
+                                    <h4 class="mb-0">学术成果</h4>
+                                    <p style="font-size: 1.1em; line-height: 1.5; color: #555555;">在国际顶级管理学和应用心理学期刊，
+                                        比如Academy of Management Journal, Journal of Applied Psychology, 
+                                        Organizational Behavior and Human Decision Processes, and Personnel Psychology, 
+                                        发表三十多篇文章。其研究成果曾多次被西方主要媒体报道，其中包括《福布斯》，《财富》，《时代》等。
+                                        谷歌学术引用超过10,000次 (i10-index=29)</p>
+                                    
                                 </div>
                             </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="row g-4 align-items-center">
-                                    <h4 class="mb-2">学院或者学校奖项 （研究生期间除外）</h4>
-                                    <ul style="font-size: 1.0em;">
-                                        <li>美国俄亥俄州立大学费舍尔商学院“学术成就奖”（Pace Setters Award，2020）</li>
-                                        <li>美国俄亥俄州立大学费舍尔商学院“优秀教职工奖”（2021、2019）</li>
-                                        <li>圣母大学门多萨商学院的“J. Donnelly Fellow”（2016）</li>
+                                    <h4 class="mb-2">学术代表文章</h4>
+                                    <ul class="custom-list" style="font-size: 1em;">
+                                        <li> <strong>Hu, J.</strong> Kim, D., & Lanaj, K. (2024). The benefits of reflecting on gratitude received at home for leaders at work: Insights from three field experiments. Journal of Applied Psychology</li>
+                                        <li> <strong>Hu, J.</strong>, Zhang, S. Lount, R., & Tepper, B. (2024). When leaders heed the lessons of mistakes: Linking leaders' recall of learning from mistakes to expressed humility. Personnel Psychology.</li>
+                                        <li> Ren, S., <strong>Hu, J.</strong>, Tang, G., & Chadee, D. (2023). Digital connectivity for work after hours: Its curvilinear relationship with employee job performance. Personnel Psychology, 76, 731-757.</li>
+                                        <li> <strong>Hu, J.</strong>, Chiang, T. Liu, Y., Wang, Z., & Liu, Y. (2023). Double challenges: How working from home affects dual-earner couples’ work-family experiences. Personnel Psychology, 76, 141-179.</li>
+                                        <li> Jiang, K., Zhang, Z., <strong>Hu, J.</strong>, & Liu, G. (2022). Retirement intention of older workers: The influences of high-involvement work practices, individual characteristics and economic environment. Personnel Psychology, 75, 929-958.</li>
+                                        <div id="more-items" style="display: none;">
+                                            <li> Zhang, S., <strong>Hu, J.</strong> Chuang, J., & Chiao, Y. (2022). Prototypical leaders reinforce efficacybeliefs: How and when leader-leader exchange relates to team performance. Journal of Organizational Behavior, 43, 1136-1151.</li>
+                                            <li> <strong>Hu, J.</strong>, Zheng, X., Tepper, B., Li, N., Liu, X., & Yu, J. (2022). The dark side of leadermember exchange: Observers’ reactions to targeted teammates of leader abuse. Human Resource Management, 61, 199-213.</li>
+                                            <li> <strong>Hu, J.</strong>, He, W., & Zhou, K. (2020). The mind, the heart, and the leader in times of crisis: How and when mortality salience relates state anxiety, job engagement, and prosocial behavior. Journal of Applied Psychology, 105, 1218-1233.</li>
+                                            <li> <strong>Hu, J.</strong>, Zhang, Z., Jiang, K., & Chen, W. (2019). Getting ahead, getting along, and getting prosocial: Examining extraversion facets, peer reactions, and leadership emergence. Journal of Applied Psychology, 104, 1369-1386.</li>
+                                            <li> Mitchell, T., <strong>Hu, J.</strong>, & Johnson, L. U. (2019). Diminishing returns of leadership behaviors on leadership emergence. Small Group Research, 50, 759-773.</li>
+                                            <li> Park, H., Hoobler, J., Wu, J., Liden, R. C., <strong>Hu, J.</strong>, & Wilson, M. (2019). Abusive supervision and employee deviance: A multifoci justice perspective. Journal of Business Ethics, 158, 1113-1131.</li>
+                                            <li> Anand, S., <strong>Hu, J.</strong>, Vidyarthi, P., & Liden, R.C. (2018). Leader-follower relationships as linking pins in the idiosyncratic deals - performance relationship in workgroups. The Leadership Quarterly, 9, 98-708.</li>
+                                            <li> <strong>Hu, J.</strong>, Erdogan, B., Jiang, K., Bauer, T. N., & Liu, S. (2018). Leader humility and team creativity: The role of team information sharing, psychological safety, and power distance. Journal of Applied Psychology, 103, 313-323.</li>
+                                            <li> <strong>Hu, J.</strong>, & Judge, T. (2017). Leader-team complementarity: Exploring the interactive effects of leader personality traits and team power distance value on team processes and performance. Journal of Applied Psychology, 102, 935-955.</li>
+                                            <li> Jiang, K., <strong>Hu, J.</strong>, Liu, S., & Lepak, D. (2017). Understanding employees'  perceptions of human resource practices: Effects of demographic dissimilarity to and relationships with managers and coworkers. Human Resource Management, 56, 69-91.</li>
+                                            <li> <strong>Hu, J.</strong>, Jiang, K., Mo, S., Chen, H., & Shi, J. (2016). The motivational antecedents and performance consequences of corporate volunteering: When do employees volunteer and when does volunteering help versus harm work performance? Organizational Behavior and Human Decision Processes, 137, 99-111.</li>
+                                            <li> Jiang, K., <strong>Hu, J.</strong>, Hong, Y., Liao, H., & Liu, S. (2016). Do it well and do it right: The impact of service climate and ethical climate on business performance outcomes and the boundary conditions. Journal of Applied Psychology, 101, 1553-1568.</li>
+                                            <li> <strong>Hu, J.</strong>, Wayne, S. J., Bauer, T., Erdogan, B., &. Liden, R. C. (2016). Senior executive and self perceptions of fit and performance: A time-lagged examination of newly-hired executives. Human Relations, 69, 1259-1286.</li>
+                                            <li> <strong>Hu, J.</strong>, Erdogan, B., Bauer, T., Jiang, K., Liu, S., & Li, Y. (2015). There are lots of big fish in this pond: The role of peer overqualification on task significance, perceived fit, and performance for overqualified employees. Journal of Applied Psychology, 100, 1228-1238.</li>
+                                            <li> <strong>Hu, J.</strong>, & Liden, R. C. (2015). Making a difference in the teamwork: Linking team prosocial motivation to team processes and effectiveness. Academy of Management Journal, 58, 1102-1127.</li>
+                                            <li> Liden, R.C., Wayne, S.J., Meuser, J.D., <strong>Hu, J.</strong>, Wu, J., & Liao, C. (2015). Servant leadership: Validation of a short form of the SL-28. The Leadership Quarterly, 26, 254-269.</li>
+                                            <li> Liu, S. *, <strong>Hu, J.</strong>, * Li, Y., Wang, Z., & Lin, X. (2014). Examining the cross-level relationship between shared leadership and learning in teams: Evidence from China. The Leadership Quarterly, 25, 282-295. * indicates equal contribution</li>
+                                            <li> Hong, Y.*, Liao, H.*, <strong>Hu, J.</strong>*, & Jiang, K.* (2013). Missing link in the service profit chain: A meta-analytic review of the antecedents, consequences, and moderators of service climate. Journal of Applied Psychology, 98, 237-267. * indicates equal contribution</li>
+                                            <li> <strong>Hu, J.</strong>, & Liden, R. C. (2013). Relative leader-member exchange within team contexts: How and when social comparison impacts individual effectiveness. Personnel Psychology, 66, 127-172.</li>
+                                            <li> Hoobler, J. M., & <strong>Hu, J.</strong> (2013). A model of injustice, abusive supervision, and negative affect. The Leadership Quarterly, 24, 256-269.</li>
+                                            <li> Jiang, K., Lepak, D. P., <strong>Hu, J.</strong>, & Baer, J. (2012). How does human resource management influence organizational outcomes? A meta-analytic investigation of the mediating mechanism. Academy of Management Journal, 55, 1264-1294. (Lead Article)</li>
+                                            <li> <strong>Hu, J.</strong>, Wang, Z., Liden, R. C., & Sun, J. (2012). The influence of leader core self-evaluation on follower reports of transformational leadership. The Leadership Quarterly, 23, 860-868.</li>
+                                            <li> <strong>Hu, J.</strong>, & Liden, R. C. (2011). Antecedents of team potency and team effectiveness: An examination of goal and process clarity and servant leadership. Journal of Applied Psychology, 96, 851-862.</li>
+                                            <li> Hoobler, J. M., <strong>Hu, J.</strong>, & Wilson, M. (2010). Do workers who experience conflict between the work and family domains hit a "glass ceiling?": A meta-analytic examination. Journal of Vocational Behavior, 77, 481-494.</li>
+                                        </div>
                                     </ul>
+                                    
                                 </div>
+                                <button id="showMoreBtn-paper" class="link-button">展示更多</button>
                             </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-4 align-items-center">
-                                    <h4 class="mb-2">学术组织</h4>
-                                    <ul style="font-size: 1.0em;">
-                                        <li>担任国际顶级应用心理学期刊Journal of Applied Psychology的副主编</li>
-                                        <li>担任Management and Organization Review的责任主编</li>
-                                        <li>担任Academy of Management Journal, Journal of Management, Organizational Behavior and Human Decision Processes, and Personnel Psychology, Journal of Organizational Behavior, and Human Relations的编委会成员</li>
-                                        <li>担任美国管理学学会组织行为学分会大区代表</li>
-                                        <li>担任中国管理国际研究学会大区代表</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Portfolio Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Portfolio</p>
-                                <h1 class="display-6 text-white mb-0">My Recent Works</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Web Design</h4>
-                                        <h1 class="display-6 mb-0">Software Design for ABC Corporation</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/Portfolio-1.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/Portfolio-1.jpg" class="btn btn-primary btn-lg-square"  data-lightbox="Portfolio-1"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Web Development</h4>
-                                        <h1 class="display-6 mb-0">Website Development for ABC Corporation</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/portfolio-2.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/portfolio-2.jpg" class="btn btn-primary btn-lg-square"  data-lightbox="portfolio-2"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Photography</h4>
-                                        <h1 class="display-6 mb-0">Security Analysis for ABC Corporation</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/portfolio-3.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/portfolio-3.jpg" class="btn btn-primary btn-lg-square"  data-lightbox="portfolio-3"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-
-
-        <!-- Blog Start -->
-        <div class="container-fluid" id="pigraBlog">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Blog</p>
-                                <h1 class="display-6 text-white mb-0">Recent Posts</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="blog-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 12, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Secrets of the Mobile Application</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Bernard</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 18, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">How to Create Quality Figma Design</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Walker</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Media</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-3.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 23, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Jacob</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Lifestyle</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-4.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 26, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Perkel</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                                    <div class="blog-btn d-flex justify-content-center">
-                                        <p class="mb-0 me-2">For More Works Visit</p>
-                                        <a href="#" class="btn d-inline-block p-0">Our Blog</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
+        
 
 
         <!-- Testimonial Start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="newsSection">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-3">
@@ -911,115 +712,6 @@
         <!-- Testimonial End -->
 
 
-        <!-- Contact Start -->
-        <div class="container-fluid" id="pigraContact">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Contact Me</p>
-                                <h1 class="display-6 text-white mb-0">Let’s Start A New Project</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                       <div class="contact-content h-100 pt-6 ps-6 pb-6">
-                            <div class="bg-light p-4">
-                                <div class="row g-5">
-                                    <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
-                                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="#">Download Now</a>.</p>
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Address</h4>
-                                                <p class="mb-0">123 Street New York.USA</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-envelope"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Mail Us</h4>
-                                                <p class="mb-0">info@example.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fa fa-phone-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Telephone</h4>
-                                                <p class="mb-0">(+012) 3456 7890</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div>
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                            <label for="name">Your Name</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                            <label for="email">Your Email</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                                            <label for="phone">Your Phone</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="project" placeholder="Project">
-                                                            <label for="project">Your Project</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                                            <label for="subject">Subject</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
-                                                            <label for="message">Message</label>
-                                                        </div>
-                
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="rounded">
-                                            <iframe class="rounded w-100" 
-                                            style="height: 400px;" src="https://www.amap.com/" sandbox="" 
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
 
 
         <!-- Footer Start -->
@@ -1027,22 +719,23 @@
             <div class="container wow fadeIn" data-wow-delay="0.1s">
                 <div class="row g-0">
                     <div class="col-12">
-                       <div class="footer-content h-100 pt-6 ps-6 pb-6">
+                       <div class="footer-content h-50 pt-6 ps-6 pb-6">
                             <div class="row g-4 align-items-center">
                                 <div class="col-12 text-center">
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>Your Site Name</a>, All right reserved.</span>
+                                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>JasmineHujia.com</a>, All right reserved.</span>
                                 </div>
                                 <div class="col-12 text-center text-body">
-                                    <a target="_blank" href="http://www.mobanwang.com/" title="网站模板" class="border-bottom text-white">网站模板</a>
+                                    <a href="javascript:void(0);" id="backToTop" title="回到顶部" class="border-bottom text-white">回到顶部</a>
                                 </div>
+                                
+                                <script>
+                                    document.getElementById("backToTop").addEventListener("click", function() {
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: 'smooth' // 实现平滑滚动
+                                        });
+                                    });
+                                </script>
                             </div>
                        </div>        
                     </div>
@@ -1072,19 +765,55 @@
 
 
         <script src="js/language.js"></script>
-
         <script>
-            document.getElementById('showMoreBtnExpr').addEventListener('click', function() {
-                // 获取所有隐藏的经历项
-                const items = document.querySelectorAll('.experience-item[style*="display: none"]');
-                // 显示这些项
-                items.forEach(item => {
-                    item.style.display = 'block';
-                });
-                // 隐藏按钮
-                this.style.display = 'none';
+            document.getElementById("showMoreBtn").addEventListener("click", function() {
+                var hiddenItems = document.querySelector(".hidden-items");
+                if (hiddenItems.style.display === "none") {
+                    hiddenItems.style.display = "block";
+                    this.textContent = "收起";
+        
+                    // 同步 WOW 动画
+                    if (typeof WOW !== 'undefined') {
+                        new WOW().sync();
+                    }
+                } else {
+                    hiddenItems.style.display = "none";
+                    this.textContent = "展开更多";
+                }
             });
         </script>
+
+        <script>
+            document.getElementById("showMoreBtn-paper").addEventListener("click", function() {
+                var moreItems = document.getElementById("more-items");
+                if (moreItems.style.display === "none") {
+                    moreItems.style.display = "block";
+                    this.textContent = "收起";
+                } else {
+                    moreItems.style.display = "none";
+                    this.textContent = "展示更多";
+                }
+            });
+        </script>
+
+
+        <style>
+            .link-button {
+                background: none;
+                border: none;
+                color: #007bff; /* 可以根据需要调整颜色 */
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 1em;
+                padding: 0;
+            }
+
+            .link-button:hover {
+                color: #0056b3; /* 可以根据需要调整悬停颜色 */
+            }
+        </style>
+        
+        
     </body>
 </html>
 
