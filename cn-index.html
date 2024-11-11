@@ -23,7 +23,10 @@
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min copy.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
@@ -38,14 +41,16 @@
         </div>
 
         <!-- 其他中文内容 -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div id="spinner" >
+            <div class="spinner-border text-primary" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+
         <!-- Spinner End -->
 <!-- Header Navigation -->
 <header class="container-fluid bg-dark p-2 text-center" style="border-bottom: 1px solid white;">
+    <div class="container-fluid" id="pigraHome" >
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">导航栏</a>
@@ -76,34 +81,12 @@
             </div>
         </div>
     </nav>
+</div>
 </header>
 
 <!-- Padding to prevent the content from being hidden -->
 <div style="height: 0px;"></div> <!-- Adjust this value based on your navbar height -->
 
-<style>
-    /* Reduce the navbar height and adjust font size */
-    .navbar {
-        padding: 0.5rem 0; /* Decrease padding */
-    }
-    
-    .navbar-nav .nav-link {
-        font-size: 14px; /* Make font smaller for a more compact navbar */
-    }
-
-    /* When hovering over a nav link, apply a subtle background */
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link:focus {
-        background-color: #343a40;
-        color: white !important;
-    }
-
-    /* Active link styling */
-    .navbar-nav .nav-link.active {
-        background-color: #212529;
-        color: white !important;
-    }
-</style>
 
 
 
@@ -120,9 +103,9 @@
                             <!-- 左侧内容 -->
                         
                             <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
-                                <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
+                                <!-- <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
                                     <h1 class="display-6 text-white mb-0">Pigra</h1>
-                                </a>
+                                </a> -->
                                 <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
                                     <p class="text-white sub-title">👋 你好，我是胡佳，这是我的个人主页</p>
                                     <!-- <h1 class="display-6 text-white mb-0">领导力与组织管理系    花旗集团国际商务讲席教授</h1> -->
@@ -187,8 +170,8 @@
                     <div class="col-lg-3">
                         <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
                             <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">教育</p>
-                                <h1 class="display-6 text-white mb-0">教育经历</h1>
+                                <p class="text-white sub-title">教育经历</p>
+                                <!-- <h1 class="display-6 text-white mb-0">教育经历</h1> -->
                             </div>
                         </div>
                     </div>
@@ -239,8 +222,8 @@
                     <div class="col-lg-3">
                         <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
                             <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">经历</p>
-                                <h1 class="display-6 text-white mb-0">我的工作经历</h1>
+                                <p class="text-white sub-title">工作经历</p>
+                                <!-- <h1 class="display-6 text-white mb-0">我的工作经历</h1> -->
                             </div>
                         </div>
                     </div>
@@ -304,26 +287,16 @@
                                     <div class="row g-4 align-items-center">
                                         <div>
                                             <span class="fa fa-calendar me-1"></span>
-                                            <span style="margin-right: 10px;">2017.06 - 2022.04</span>
+                                            <span style="margin-right: 10px;">2022.05至今</span>
                                             <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">清华大学经济管理学学院和苏世民书院双聘教授，花旗集团国际商务讲席教授</p>
                                         </div>
                                     </div>
-                                </div>
-                    
-                                <div class="portfolio-item py-2 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="row g-4 align-items-center">
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span>
-                                            <span style="margin-right: 10px;">2024.05至今</span>
-                                            <p style="font-size: 1.2em; line-height: 1.5; color: #333333;">美国俄亥俄州立大学费舍尔商学院终身副教授</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div>                            
                             </div>
-                    
-                            <!-- 展开按钮 -->
                             <button id="showMoreBtn" class="link-button">展开更多</button>
                         </div>
+                       
+                       
                     </div>
                     
                 </div>
@@ -341,7 +314,6 @@
                         <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
                             <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
                                 <p class="text-white sub-title">研究领域</p>
-                                <!-- <h1 class="display-6 text-white mb-0">My Recent Works</h1> -->
                             </div>
                         </div>
                     </div>
@@ -480,8 +452,8 @@
                     <div class="col-lg-3">
                         <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
                             <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Portfolio</p>
-                                <h1 class="display-6 text-white mb-0">My Recent Works</h1>
+                                <p class="text-white sub-title">所获荣誉</p>
+                                <!-- <h1 class="display-6 text-white mb-0">My Recent Works</h1> -->
                             </div>
                         </div>
                     </div>
@@ -537,7 +509,7 @@
                         <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
                             <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
                                 <p class="text-white sub-title">学术成果</p>
-                                <h1 class="display-6 text-white mb-0">我的学术成果</h1>
+                                <!-- <h1 class="display-6 text-white mb-0">我的学术成果</h1> -->
                             </div>
                         </div>
                     </div>
@@ -558,37 +530,36 @@
                                 <div class="row g-4 align-items-center">
                                     <h4 class="mb-2">学术代表文章</h4>
                                     <ul class="custom-list" style="font-size: 1em;">
-                                        <li> <strong>Hu, J.</strong> Kim, D., & Lanaj, K. (2024). The benefits of reflecting on gratitude received at home for leaders at work: Insights from three field experiments. Journal of Applied Psychology</li>
-                                        <li> <strong>Hu, J.</strong>, Zhang, S. Lount, R., & Tepper, B. (2024). When leaders heed the lessons of mistakes: Linking leaders' recall of learning from mistakes to expressed humility. Personnel Psychology.</li>
-                                        <li> Ren, S., <strong>Hu, J.</strong>, Tang, G., & Chadee, D. (2023). Digital connectivity for work after hours: Its curvilinear relationship with employee job performance. Personnel Psychology, 76, 731-757.</li>
-                                        <li> <strong>Hu, J.</strong>, Chiang, T. Liu, Y., Wang, Z., & Liu, Y. (2023). Double challenges: How working from home affects dual-earner couples’ work-family experiences. Personnel Psychology, 76, 141-179.</li>
-                                        <li> Jiang, K., Zhang, Z., <strong>Hu, J.</strong>, & Liu, G. (2022). Retirement intention of older workers: The influences of high-involvement work practices, individual characteristics and economic environment. Personnel Psychology, 75, 929-958.</li>
-                                        <div id="more-items" style="display: none;">
-                                            <li> Zhang, S., <strong>Hu, J.</strong> Chuang, J., & Chiao, Y. (2022). Prototypical leaders reinforce efficacybeliefs: How and when leader-leader exchange relates to team performance. Journal of Organizational Behavior, 43, 1136-1151.</li>
-                                            <li> <strong>Hu, J.</strong>, Zheng, X., Tepper, B., Li, N., Liu, X., & Yu, J. (2022). The dark side of leadermember exchange: Observers’ reactions to targeted teammates of leader abuse. Human Resource Management, 61, 199-213.</li>
-                                            <li> <strong>Hu, J.</strong>, He, W., & Zhou, K. (2020). The mind, the heart, and the leader in times of crisis: How and when mortality salience relates state anxiety, job engagement, and prosocial behavior. Journal of Applied Psychology, 105, 1218-1233.</li>
-                                            <li> <strong>Hu, J.</strong>, Zhang, Z., Jiang, K., & Chen, W. (2019). Getting ahead, getting along, and getting prosocial: Examining extraversion facets, peer reactions, and leadership emergence. Journal of Applied Psychology, 104, 1369-1386.</li>
-                                            <li> Mitchell, T., <strong>Hu, J.</strong>, & Johnson, L. U. (2019). Diminishing returns of leadership behaviors on leadership emergence. Small Group Research, 50, 759-773.</li>
-                                            <li> Park, H., Hoobler, J., Wu, J., Liden, R. C., <strong>Hu, J.</strong>, & Wilson, M. (2019). Abusive supervision and employee deviance: A multifoci justice perspective. Journal of Business Ethics, 158, 1113-1131.</li>
-                                            <li> Anand, S., <strong>Hu, J.</strong>, Vidyarthi, P., & Liden, R.C. (2018). Leader-follower relationships as linking pins in the idiosyncratic deals - performance relationship in workgroups. The Leadership Quarterly, 9, 98-708.</li>
-                                            <li> <strong>Hu, J.</strong>, Erdogan, B., Jiang, K., Bauer, T. N., & Liu, S. (2018). Leader humility and team creativity: The role of team information sharing, psychological safety, and power distance. Journal of Applied Psychology, 103, 313-323.</li>
-                                            <li> <strong>Hu, J.</strong>, & Judge, T. (2017). Leader-team complementarity: Exploring the interactive effects of leader personality traits and team power distance value on team processes and performance. Journal of Applied Psychology, 102, 935-955.</li>
-                                            <li> Jiang, K., <strong>Hu, J.</strong>, Liu, S., & Lepak, D. (2017). Understanding employees'  perceptions of human resource practices: Effects of demographic dissimilarity to and relationships with managers and coworkers. Human Resource Management, 56, 69-91.</li>
-                                            <li> <strong>Hu, J.</strong>, Jiang, K., Mo, S., Chen, H., & Shi, J. (2016). The motivational antecedents and performance consequences of corporate volunteering: When do employees volunteer and when does volunteering help versus harm work performance? Organizational Behavior and Human Decision Processes, 137, 99-111.</li>
-                                            <li> Jiang, K., <strong>Hu, J.</strong>, Hong, Y., Liao, H., & Liu, S. (2016). Do it well and do it right: The impact of service climate and ethical climate on business performance outcomes and the boundary conditions. Journal of Applied Psychology, 101, 1553-1568.</li>
-                                            <li> <strong>Hu, J.</strong>, Wayne, S. J., Bauer, T., Erdogan, B., &. Liden, R. C. (2016). Senior executive and self perceptions of fit and performance: A time-lagged examination of newly-hired executives. Human Relations, 69, 1259-1286.</li>
-                                            <li> <strong>Hu, J.</strong>, Erdogan, B., Bauer, T., Jiang, K., Liu, S., & Li, Y. (2015). There are lots of big fish in this pond: The role of peer overqualification on task significance, perceived fit, and performance for overqualified employees. Journal of Applied Psychology, 100, 1228-1238.</li>
-                                            <li> <strong>Hu, J.</strong>, & Liden, R. C. (2015). Making a difference in the teamwork: Linking team prosocial motivation to team processes and effectiveness. Academy of Management Journal, 58, 1102-1127.</li>
-                                            <li> Liden, R.C., Wayne, S.J., Meuser, J.D., <strong>Hu, J.</strong>, Wu, J., & Liao, C. (2015). Servant leadership: Validation of a short form of the SL-28. The Leadership Quarterly, 26, 254-269.</li>
-                                            <li> Liu, S. *, <strong>Hu, J.</strong>, * Li, Y., Wang, Z., & Lin, X. (2014). Examining the cross-level relationship between shared leadership and learning in teams: Evidence from China. The Leadership Quarterly, 25, 282-295. * indicates equal contribution</li>
-                                            <li> Hong, Y.*, Liao, H.*, <strong>Hu, J.</strong>*, & Jiang, K.* (2013). Missing link in the service profit chain: A meta-analytic review of the antecedents, consequences, and moderators of service climate. Journal of Applied Psychology, 98, 237-267. * indicates equal contribution</li>
-                                            <li> <strong>Hu, J.</strong>, & Liden, R. C. (2013). Relative leader-member exchange within team contexts: How and when social comparison impacts individual effectiveness. Personnel Psychology, 66, 127-172.</li>
-                                            <li> Hoobler, J. M., & <strong>Hu, J.</strong> (2013). A model of injustice, abusive supervision, and negative affect. The Leadership Quarterly, 24, 256-269.</li>
-                                            <li> Jiang, K., Lepak, D. P., <strong>Hu, J.</strong>, & Baer, J. (2012). How does human resource management influence organizational outcomes? A meta-analytic investigation of the mediating mechanism. Academy of Management Journal, 55, 1264-1294. (Lead Article)</li>
-                                            <li> <strong>Hu, J.</strong>, Wang, Z., Liden, R. C., & Sun, J. (2012). The influence of leader core self-evaluation on follower reports of transformational leadership. The Leadership Quarterly, 23, 860-868.</li>
-                                            <li> <strong>Hu, J.</strong>, & Liden, R. C. (2011). Antecedents of team potency and team effectiveness: An examination of goal and process clarity and servant leadership. Journal of Applied Psychology, 96, 851-862.</li>
-                                            <li> Hoobler, J. M., <strong>Hu, J.</strong>, & Wilson, M. (2010). Do workers who experience conflict between the work and family domains hit a "glass ceiling?": A meta-analytic examination. Journal of Vocational Behavior, 77, 481-494.</li>
-                                        </div>
+                                        <li> <strong>Hu, J.</strong> Kim, D., & Lanaj, K. (2024). <a href="">The benefits of reflecting on gratitude received at home for leaders at work: Insights from three field experiments.</a> Journal of Applied Psychology</li>
+                                            <li> <strong>Hu, J.</strong>, Zhang, S. Lount, R., & Tepper, B. (2024). <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/peps.12570">When leaders heed the lessons of mistakes: Linking leaders' recall of learning from mistakes to expressed humility.</a> Personnel Psychology.</li>
+                                            <li> Ren, S., <strong>Hu, J.</strong>, Tang, G., & Chadee, D. (2023). <a href="">Digital connectivity for work after hours: Its curvilinear relationship with employee job performance. </a> Personnel Psychology, 76, 731-757.</li>
+                                            <li> <strong>Hu, J.</strong>, Chiang, T. Liu, Y., Wang, Z., & Liu, Y. (2023). <a href="">Double challenges: How working from home affects dual-earner couples’ work-family experiences. </a> Personnel Psychology, 76, 141-179.</li>
+                                            <li> Jiang, K., Zhang, Z., <strong>Hu, J.</strong>, & Liu, G. (2022). <a href="">Retirement intention of older workers: The influences of high-involvement work practices, individual characteristics and economic environment.</a>  Personnel Psychology, 75, 929-958.</li>
+                                            <div id="more-items" style="display: none;">
+                                                <li> Zhang, S., <strong>Hu, J.</strong> Chuang, J., & Chiao, Y. (2022). <a href="">Prototypical leaders reinforce efficacybeliefs: How and when leader-leader exchange relates to team performance. </a> Journal of Organizational Behavior, 43, 1136-1151.</li>
+                                                <li> <strong>Hu, J.</strong>, Zheng, X., Tepper, B., Li, N., Liu, X., & Yu, J. (2022). <a href="">The dark side of leadermember exchange: Observers’ reactions to targeted teammates of leader abuse. </a> Human Resource Management, 61, 199-213.</li>
+                                                <li> <strong>Hu, J.</strong>, He, W., & Zhou, K. (2020). <a href="">The mind, the heart, and the leader in times of crisis: How and when mortality salience relates state anxiety, job engagement, and prosocial behavior. </a> Journal of Applied Psychology, 105, 1218-1233.</li>
+                                                <li> <strong>Hu, J.</strong>, Zhang, Z., Jiang, K., & Chen, W. (2019). <a href="">Getting ahead, getting along, and getting prosocial: Examining extraversion facets, peer reactions, and leadership emergence. </a> Journal of Applied Psychology, 104, 1369-1386.</li>
+                                                <li> Mitchell, T., <strong>Hu, J.</strong>, & Johnson, L. U. (2019). <a href="">Diminishing returns of leadership behaviors on leadership emergence.</a>  Small Group Research, 50, 759-773.</li>
+                                                <li> Park, H., Hoobler, J., Wu, J., Liden, R. C., <strong>Hu, J.</strong>, & Wilson, M. (2019). <a href="">Abusive supervision and employee deviance: A multifoci justice perspective. </a> Journal of Business Ethics, 158, 1113-1131.</li>
+                                                <li> Anand, S., <strong>Hu, J.</strong>, Vidyarthi, P., & Liden, R.C. (2018). <a href="">Leader-follower relationships as linking pins in the idiosyncratic deals - performance relationship in workgroups.</a>  The Leadership Quarterly, 9, 98-708.</li>
+                                                <li> <strong>Hu, J.</strong>, Erdogan, B., Jiang, K., Bauer, T. N., & Liu, S. (2018). <a href="">Leader humility and team creativity: The role of team information sharing, psychological safety, and power distance. </a> Journal of Applied Psychology, 103, 313-323.</li>
+                                                <li> <strong>Hu, J.</strong>, & Judge, T. (2017). <a href="">Leader-team complementarity: Exploring the interactive effects of leader personality traits and team power distance value on team processes and performance.</a>  Journal of Applied Psychology, 102, 935-955.</li>
+                                                <li> Jiang, K., <strong>Hu, J.</strong>, Liu, S., & Lepak, D. (2017). <a href="">Understanding employees'  perceptions of human resource practices: Effects of demographic dissimilarity to and relationships with managers and coworkers.</a>  Human Resource Management, 56, 69-91.</li>
+                                                <li> <strong>Hu, J.</strong>, Jiang, K., Mo, S., Chen, H., & Shi, J. (2016). <a href="">The motivational antecedents and performance consequences of corporate volunteering: When do employees volunteer and when does volunteering help versus harm work performance?</a>  Organizational Behavior and Human Decision Processes, 137, 99-111.</li>
+                                                <li> Jiang, K., <strong>Hu, J.</strong>, Hong, Y., Liao, H., & Liu, S. (2016). <a href="">Do it well and do it right: The impact of service climate and ethical climate on business performance outcomes and the boundary conditions.</a>  Journal of Applied Psychology, 101, 1553-1568.</li>
+                                                <li> <strong>Hu, J.</strong>, Wayne, S. J., Bauer, T., Erdogan, B., &. Liden, R. C. (2016). <a href="">Senior executive and self perceptions of fit and performance: A time-lagged examination of newly-hired executives.</a>  Human Relations, 69, 1259-1286.</li>
+                                                <li> <strong>Hu, J.</strong>, Erdogan, B., Bauer, T., Jiang, K., Liu, S., & Li, Y. (2015). <a href="">There are lots of big fish in this pond: The role of peer overqualification on task significance, perceived fit, and performance for overqualified employees. </a> Journal of Applied Psychology, 100, 1228-1238.</li>
+                                                <li> <strong>Hu, J.</strong>, & Liden, R. C. (2015). <a href="">Making a difference in the teamwork: Linking team prosocial motivation to team processes and effectiveness.</a>  Academy of Management Journal, 58, 1102-1127.</li>
+                                                <li> Liden, R.C., Wayne, S.J., Meuser, J.D., <strong>Hu, J.</strong>, Wu, J., & Liao, C. (2015). <a href="">Servant leadership: Validation of a short form of the SL-28.</a>  The Leadership Quarterly, 26, 254-269.</li>
+                                                <li> Liu, S. *, <strong>Hu, J.</strong>, * Li, Y., Wang, Z., & Lin, X. (2014). <a href="">Examining the cross-level relationship between shared leadership and learning in teams: Evidence from China. </a> The Leadership Quarterly, 25, 282-295. * indicates equal contribution</li>
+                                                <li> Hong, Y.*, Liao, H.*, <strong>Hu, J.</strong>*, & Jiang, K.* (2013). <a href="">Missing link in the service profit chain: A meta-analytic review of the antecedents, consequences, and moderators of service climate.</a>  Journal of Applied Psychology, 98, 237-267. * indicates equal contribution</li>
+                                                <li> <strong>Hu, J.</strong>, & Liden, R. C. (2013). <a href="">Relative leader-member exchange within team contexts: How and when social comparison impacts individual effectiveness.</a>  Personnel Psychology, 66, 127-172.</li>
+                                                <li> Hoobler, J. M., & <strong>Hu, J.</strong> (2013). <a href="">A model of injustice, abusive supervision, and negative affect.</a>  The Leadership Quarterly, 24, 256-269.</li>
+                                                <li> Jiang, K., Lepak, D. P., <strong>Hu, J.</strong>, & Baer, J. (2012). <a href="">How does human resource management influence organizational outcomes? A meta-analytic investigation of the mediating mechanism.</a>  Academy of Management Journal, 55, 1264-1294. (Lead Article)</li>
+                                                <li> <strong>Hu, J.</strong>, Wang, Z., Liden, R. C., & Sun, J. (2012). <a href="">The influence of leader core self-evaluation on follower reports of transformational leadership.</a>  The Leadership Quarterly, 23, 860-868.</li>
+                                                <li> <strong>Hu, J.</strong>, & Liden, R. C. (2011). <a href="">Antecedents of team potency and team effectiveness: An examination of goal and process clarity and servant leadership. </a> Journal of Applied Psychology, 96, 851-862.</li>
+                                                <li> Hoobler, J. M., <strong>Hu, J.</strong>, & Wilson, M. (2010). <a href="">Do workers who experience conflict between the work and family domains hit a "glass ceiling?": A meta-analytic examination. </a> Journal of Vocational Behavior, 77, 481-494.</li></div>
                                     </ul>
                                     
                                 </div>
@@ -728,14 +699,7 @@
                                     <a href="javascript:void(0);" id="backToTop" title="回到顶部" class="border-bottom text-white">回到顶部</a>
                                 </div>
                                 
-                                <script>
-                                    document.getElementById("backToTop").addEventListener("click", function() {
-                                        window.scrollTo({
-                                            top: 0,
-                                            behavior: 'smooth' // 实现平滑滚动
-                                        });
-                                    });
-                                </script>
+                               
                             </div>
                        </div>        
                     </div>
@@ -812,8 +776,18 @@
                 color: #0056b3; /* 可以根据需要调整悬停颜色 */
             }
         </style>
+
+        
+
+    <script>
+        document.getElementById("backToTop").addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 实现平滑滚动
+            });
+        });
+    </script>
         
         
     </body>
 </html>
-
