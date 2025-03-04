@@ -17,12 +17,35 @@
             text-align: center;
             line-height: 50px; /* 使文字垂直居中 */
           } 
+          .custom-button {
+            background-color: rgb(53, 180, 164); /* 绿色背景 */
+            color: white; /* 白色文字 */
+            padding: 15px 32px; /* 内边距 */
+            text-align: center; /* 文字居中 */
+            text-decoration: none; /* 去掉下划线 */
+            display: inline-block; /* 行内块元素 */
+            font-size: 18px; /* 字体大小 */
+            margin: 4px 2px; /* 外边距 */
+            cursor: pointer; /* 鼠标指针变成手型 */
+            border: none; /* 无边框 */
+            border-radius: 5px; /* 边角圆滑 */
+            box-shadow: 0 5px rgb(196, 196, 196); /* 下方阴影 */
+            transition: all 0.3s ease 0s; /* 过渡效果 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .custom-button:hover {
+            background-color: rgb(53, 180, 164); /* 悬停时更深的绿色 */
+            box-shadow: 0 4px #666; /* 悬停时阴影效果 */
+            transform: translateY(-2px); /* 悬停时微微上移 */
+        }
+
       </style>
     </head>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - Kelly Bootstrap Template</title>
+  <title>About Jia (Jasmine) Hu</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -155,7 +178,7 @@
                       <div class="col-md-12 text-center">
   
       
-                        <button type="submit">Send Message</button>
+                        <button type="submit" class="custom-button">Send Message</button>
                       </div>
       
                     </div>
