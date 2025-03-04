@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <style>
+      .resume-title{
+        font-family: Arial, Helvetica, sans-serif;
+      }
       .course-link p {
         color: gray !important; 
         font-size: 20px; /* 控制下划线与文字之间的距离 */
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Times New Roman', Times, serif;
       }
       .footer-type {
         position: fixed;
@@ -17,6 +20,10 @@
         text-align: center;
         line-height: 50px; /* 使文字垂直居中 */
       } 
+      .course-link p::before {
+        content: '• '; /* 添加一个点 */
+        padding-right: 8px; /* 在点和文本之间添加一些空间 */
+      }
   </style>
 </head>
 <head>
@@ -84,7 +91,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="publication.html" >Publications</a></li>
-          <li><a href="subject.html" class="active">Lecture</a></li>
+          <li><a href="subject.html" class="active">Teaching</a></li>
           <li><a href="contacts.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -108,31 +115,46 @@
       <div class="container">
 
         <div class="row justify-content-center">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
             <!-- <div class="row justify-content-center"> -->
-            <h3 class="resume-title">Tsinghua University</h3>
+            <h3 class="resume-title">Tsinghua University, Schwartzman College</h3>
 
-            <div class="resume-item pb-0 course-link">
-              <p>Organizational Leadership courses in the Global MBA and Schwarzman Scholar programs</p>
-              <p>leadership courses in the EMBA and EE programs</p>
-              <p>Global Responsibility Leadership course in the MIM program</p>
-              <p>micro-organizational management courses for PhD students</p>
+            <div class=" pb-0 course-link">
+              <p>Leadership in Business, Schwarzman Scholars Program (in English)</p>
+            </div>
 
-              
-            </div><!-- Edn Resume Item -->
+            <h3 class="resume-title">Tsinghua University, School of Economics and Management</h3>
+            <div class=" pb-0 course-link">
+              <p>Leadership in Business, Global MBA Joint Program with MIT Sloan (in English)</p>
+              <p>Global Responsible Leadership, Masters in Management (in English)</p>
+              <p>Micro Management PhD Seminar, PhD Course</p> 
+            </div>
 
-            <h3 class="resume-title">Ohio State University</h3>
-            <div class="resume-item pb-0 course-link">
-              <p>core leadership course in the full-time MBA program</p>
-              <p>organizational leadership courses for the Master's programs in Finance and Operations Management</p>
-              <p>advanced organizational behavior seminar for PhD students</p> 
-            </div><!-- Edn Resume Item -->
-            <h3 class="resume-title">University of Notre Dame</h3>
-            
-            <div class="resume-item pb-0 course-link">
-              <p>Principles of Management course</p>
-              <p>Management Competency course</p>
-            </div><!-- Edn Resume Item -->
+            <h3 class="resume-title">The Ohio State University, Fisher College of Business</h3>
+            <div class=" pb-0 course-link">
+              <p>Leadership, MBA Core Course</p>
+              <p> Advanced Leadership, Working Professionals MBA Course </p>
+              <p> Business Logistics Engineering, Leadership for Specialized Master Programs, Core Course </p>
+              <p> Master of Finance, Leadership for Specialized Master Programs, Core Course </p>
+              <p> Managing Teams and Leadership for Human Resource Managers, Master of HRM Course</p>
+              <p> Leadership Legacy, Dean’s Leadership Program, Undergraduate Course</p>
+              <p> Advanced Seminar in Organizational Behavior, PhD Courses</p>
+              <p> PhD Developmental Seminar</p>
+            </div>
+
+            <h3 class="resume-title"> University of Notre Dame, Mendoza College of Business</h3>
+            <div class=" pb-0 course-link">
+              <p>Management Competencies, Upper-Level Undergraduate Course</p>
+              <p>Principles of Management, Undergraduate Course</p>
+              <p>Business Management in China, Undergraduate Course</p> 
+            </div>
+
+            <h3 class="resume-title">University of Illinois at Chicago, College of Business Administration</h3>
+            <div class=" pb-0 course-link">
+              <p>Organizational Behavior, Undergraduate Course</p>
+              <p>Introduction to Management, Undergraduate Course</p>
+              <p>Leadership, MBA Course: Organizational Behavior</p> 
+            </div>
           </div>
         </div>
 
