@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+          .paper-link a {
+            color: black !important; 
+            text-decoration: underline !important; 
+            text-underline-position: under; /* 控制下划线位置，默认值是 `auto` */
+            padding-bottom: 2px; /* 控制下划线与文字之间的距离 */
+          }
+      
+
+          .custom-list {
+            list-style-type: none; /* 去掉列表前面的点 */
+            padding-left: 0; /* 移除默认的左侧缩进 */
+            }
+
+        .custom-list li {
+            margin-bottom: 20px; /* 设置列表项之间的间距，可以根据需要调整 */
+            font-weight: lighter !important;
+            opacity: 0.9;
+            line-height: 2.0; 
+        }
+        li strong {
+            font-weight: bold; /* 设置字体加粗 */
+            opacity: 1; /* 设置不透明度为 1，确保字体完全不透明 */
+            color: black; /* 设置字体颜色为黑色 */
+        }   
+        .link-button {
+                background: none;
+                border: none;
+                color: #007bff; /* 可以根据需要调整颜色 */
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 1em;
+                padding: 0;
+            }
+
+            .link-button:hover {
+                color: #0056b3; /* 可以根据需要调整悬停颜色 */
+            }
+      .footer-type {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px; /* 可以根据需要调整高度 */
+        background-color: rgb(178, 178, 178); /* 灰色背景 */
+        text-align: center;
+        line-height: 50px; /* 使文字垂直居中 */
+      } 
+        </style>
+      </head>
+
+<head>
+    
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Jasmine Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+          <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href="css/bootstrap.min copy.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700">
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Jasmine</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="publication.html" class="active">Publications</a></li>
+          <li><a href="subject.html">Lecture</a></li>       
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/publications.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 content">
+            <h2 class="mb-5" style="font-size: 30pt;">Main Research Areas</h2>
+            <p class="fst-italic" style="font-size: 20pt;">
+              Pro-social team leadership, team motivation, and the impact of technology application and data science on organizational leadership and effectiveness.
+            </p>
+            <p class="fst-italic" style="font-size: 20pt;">
+              The impact of remote work on family and work.
+            </p>
+          
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+      <!-- Hero Section -->
+      <section id="hero">
+ 
+        <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+          <div class="row justify-content-center">
+            
+            <div class="col-lg-9">
+              
+                <div class="row g-4 align-items-center paper-link" >
+                    <h4 class="mb-2" style="font-size: 100; font-family: 'Times New Roman', Times, serif;"><strong> Representative Publications</strong> </h4>
+                    <ul class="custom-list" style="font-size: 1.15em; font-family: 'Times New Roman', Times, serif; text-align: left;">
+                        <li> <strong>Hu, J.</strong> Kim, D., & Lanaj, K. (2024). <a href="resource/The Benefits of Reflecting on Gratitude Received at Home for Leaders at Work.pdf" target="_blank" rel="noopener noreferrer">The benefits of reflecting on gratitude received at home for leaders at work: Insights from three field experiments.</a> <em>Journal of Applied Psychology</em>.</li>
+                        <li> <strong>Hu, J.</strong>, Zhang, S. Lount, R., & Tepper, B. (2024). <a href="resource/When leaders heed the lessons of mistakes.pdf" target="_blank" rel="noopener noreferrer">When leaders heed the lessons of mistakes: Linking leaders' recall of learning from mistakes to expressed humility.</a> <em>Personnel Psychology</em>.</li>
+                        <li> Ren, S., <strong>Hu, J.</strong>, Tang, G., & Chadee, D. (2023). <a href="resource/Digital connectivity for work after hours  Its curvilinear relationship with employee.pdf" target="_blank" rel="noopener noreferrer">Digital connectivity for work after hours: Its curvilinear relationship with employee job performance. </a> <em>Personnel Psychology</em>, 76, 731-757.</li>
+                        <li> <strong>Hu, J.</strong>, Chiang, T. Liu, Y., Wang, Z., & Liu, Y. (2023). <a href="resource/Double challenges How working from home.pdf" target="_blank" rel="noopener noreferrer">Double challenges: How working from home affects dual-earner couples’ work-family experiences. </a> <em>Personnel Psychology</em>, 76, 141-179.</li>
+                        <li> Jiang, K., Zhang, Z., <strong>Hu, J.</strong>, & Liu, G. (2022). <a href="resource/Retirement intention of older workers  The influences of high‐involvement work.pdf" target="_blank" rel="noopener noreferrer">Retirement intention of older workers: The influences of high-involvement work practices, individual characteristics and economic environment.</a>  <em>Personnel Psychology</em>, 75, 929-958.</li>
+                        <div id="more-items" style="display: none;">
+                          <li> Zhang, S., <strong>Hu, J.</strong> Chuang, J., & Chiao, Y. (2022). <a href="resource/Prototypical leaders reinforce efficacy beliefs How and when.pdf" target="_blank" rel="noopener noreferrer">Prototypical leaders reinforce efficacybeliefs: How and when leader-leader exchange relates to team performance. </a> <em>Journal of Organizational Behavior</em>, 43, 1136-1151.</li>
+                          <li> <strong>Hu, J.</strong>, Zheng, X., Tepper, B., Li, N., Liu, X., & Yu, J. (2022). <a href="resource/The dark side of leader.pdf" target="_blank" rel="noopener noreferrer">The dark side of leadermember exchange: Observers’ reactions to targeted teammates of leader abuse. </a> <em>Human Resource Management</em>, 61, 199-213.</li>
+                          <li> <strong>Hu, J.</strong>, He, W., & Zhou, K. (2020). <a href="resource/the maind, the heart, and the leader in timesof crisis.pdf" target="_blank" rel="noopener noreferrer">The mind, the heart, and the leader in times of crisis: How and when mortality salience relates state anxiety, job engagement, and prosocial behavior. </a> <em>Journal of Applied Psychology</em>, 105, 1218-1233.</li>
+                          <li> <strong>Hu, J.</strong>, Zhang, Z., Jiang, K., & Chen, W. (2019). <a target="_blank" rel="noopener noreferrer">Getting ahead, getting along, and getting prosocial: Examining extraversion facets, peer reactions, and leadership emergence. </a> <em>Journal of Applied Psychology</em>, 104, 1369-1386.</li>
+                          <li> Mitchell, T., <strong>Hu, J.</strong>, & Johnson, L. U. (2019). <a target="_blank" rel="noopener noreferrer">Diminishing returns of leadership behaviors on leadership emergence.</a> <em> Small Group Research</em>, 50, 759-773.</li>
+                          <li> Park, H., Hoobler, J., Wu, J., Liden, R. C., <strong>Hu, J.</strong>, & Wilson, M. (2019). <a target="_blank" rel="noopener noreferrer">Abusive supervision and employee deviance: A multifoci justice perspective. </a> <em>Journal of Business Ethics</em>, 158, 1113-1131.</li>
+                          <li> Anand, S., <strong>Hu, J.</strong>, Vidyarthi, P., & Liden, R.C. (2018). <a target="_blank" rel="noopener noreferrer">Leader-follower relationships as linking pins in the idiosyncratic deals - performance relationship in workgroups.</a> <em> The Leadership Quarterly</em>, 9, 98-708.</li>
+                          <li> <strong>Hu, J.</strong>, Erdogan, B., Jiang, K., Bauer, T. N., & Liu, S. (2018). <a href="resource/Leader_Humility_and_Team_Creativity_The.pdf" target="_blank" rel="noopener noreferrer">Leader humility and team creativity: The role of team information sharing, psychological safety, and power distance. </a> <em>Journal of Applied Psychology</em>, 103, 313-323.</li>
+                          <li> <strong>Hu, J.</strong>, & Judge, T. (2017). <a href="resource/Leader-Team Complementarity.pdf" target="_blank" rel="noopener noreferrer">Leader-team complementarity: Exploring the interactive effects of leader personality traits and team power distance value on team processes and performance.</a> <em> Journal of Applied Psychology</em>, 102, 935-955.</li>
+                          <li> Jiang, K., <strong>Hu, J.</strong>, Liu, S., & Lepak, D. (2017). <a href="resource/Understanding_employees_perceptions_of_h.pdf" target="_blank" rel="noopener noreferrer">Understanding employees'  perceptions of human resource practices: Effects of demographic dissimilarity to and relationships with managers and coworkers.</a> <em> Human Resource Management</em>, 56, 69-91.</li>
+                          <li> <strong>Hu, J.</strong>, Jiang, K., Mo, S., Chen, H., & Shi, J. (2016). <a href="resource/The motivational antecedents and performance consequences.pdf" target="_blank" rel="noopener noreferrer">The motivational antecedents and performance consequences of corporate volunteering: When do employees volunteer and when does volunteering help versus harm work performance?</a> <em> Organizational Behavior and Human Decision Processes</em>, 137, 99-111.</li>
+                          <li> Jiang, K., <strong>Hu, J.</strong>, Hong, Y., Liao, H., & Liu, S. (2016). <a href="resource/Do It Well_and_Do_It_Right_The_Impact_of.pdf" target="_blank" rel="noopener noreferrer">Do it well and do it right: The impact of service climate and ethical climate on business performance outcomes and the boundary conditions.</a> <em> Journal of Applied Psychology</em>, 101, 1553-1568.</li>
+                          <li> <strong>Hu, J.</strong>, Wayne, S. J., Bauer, T., Erdogan, B., &. Liden, R. C. (2016). <a href="resource/Self and senior executive.pdf" target="_blank" rel="noopener noreferrer">Senior executive and self perceptions of fit and performance: A time-lagged examination of newly-hired executives.</a> <em> Human Relations</em>, 69, 1259-1286.</li>
+                          <li> <strong>Hu, J.</strong>, Erdogan, B., Bauer, T., Jiang, K., Liu, S., & Li, Y. (2015). <a href="resource/There are lots of big fish in this pond.pdf" target="_blank" rel="noopener noreferrer">There are lots of big fish in this pond: The role of peer overqualification on task significance, perceived fit, and performance for overqualified employees. </a> <em>Journal of Applied Psychology</em>, 100, 1228-1238.</li>
+                          <li> <strong>Hu, J.</strong>, & Liden, R. C. (2015). <a href="resource/Making a difference in the teamwork.pdf" target="_blank" rel="noopener noreferrer">Making a difference in the teamwork: Linking team prosocial motivation to team processes and effectiveness.</a> <em> Academy of Management Journal</em>, 58, 1102-1127.</li>
+                          <li> Liden, R.C., Wayne, S.J., Meuser, J.D., <strong>Hu, J.</strong>, Wu, J., & Liao, C. (2015). <a href="resource/Servant_leadership_Validation_of_a_short.pdf" target="_blank" rel="noopener noreferrer">Servant leadership: Validation of a short form of the SL-28.</a> <em> The Leadership Quarterly</em>, 26, 254-269.</li>
+                          <li> Liu, S. *, <strong>Hu, J.</strong>, * Li, Y., Wang, Z., & Lin, X. (2014). <a href="resource/Examining the cross-level relationship between shared.pdf" target="_blank" rel="noopener noreferrer">Examining the cross-level relationship between shared leadership and learning in teams: Evidence from China. </a> <em>The Leadership Quarterly</em>, 25, 282-295. * indicates equal contribution</li>
+                          <li> Hong, Y.*, Liao, H.*, <strong>Hu, J.</strong>*, & Jiang, K.* (2013). <a   target="_blank" rel="noopener noreferrer">Missing link in the service profit chain: A meta-analytic review of the antecedents, consequences, and moderators of service climate.</a> <em> Journal of Applied Psychology</em>, 98, 237-267. * indicates equal contribution</li>
+                          <li> <strong>Hu, J.</strong>, & Liden, R. C. (2013). <a href="resource/Relative Leader Member Exchange Within Team Contexts  How and when Social Comparison.pdf" target="_blank" rel="noopener noreferrer">Relative leader-member exchange within team contexts: How and when social comparison impacts individual effectiveness.</a> <em> Personnel Psychology</em>, 66, 127-172.</li>
+                          <li> Hoobler, J. M., & <strong>Hu, J.</strong> (2013). <a href="resource/A Model of Injustice, Abusive Supervision, and Negative Affect.pdf" target="_blank" rel="noopener noreferrer">A model of injustice, abusive supervision, and negative affect.</a> <em> The Leadership Quarterly</em>, 24, 256-269.</li>
+                          <li> Jiang, K., Lepak, D. P., <strong>Hu, J.</strong>, & Baer, J. (2012). <a href="resource/HOW_DOES_HUMAN_RESOURCE_MANAGEMENT_INFLU.pdf" target="_blank" rel="noopener noreferrer">How does human resource management influence organizational outcomes? A meta-analytic investigation of the mediating mechanism.</a> <em> Academy of Management Journal</em>, 55, 1264-1294. (Lead Article)</li>
+                          <li> <strong>Hu, J.</strong>, Wang, Z., Liden, R. C., & Sun, J. (2012). <a href="resource/The_influence_of_leader_core_self_evalua.pdf" target="_blank" rel="noopener noreferrer">The influence of leader core self-evaluation on follower reports of transformational leadership.</a> <em> The Leadership Quarterly</em>, 23, 860-868.</li>
+                          <li> <strong>Hu, J.</strong>, & Liden, R. C. (2011). <a href="resource/Antecedents of team potency and team effectiveness.pdf" target="_blank" rel="noopener noreferrer">Antecedents of team potency and team effectiveness: An examination of goal and process clarity and servant leadership. </a> <em>Journal of Applied Psychology</em>, 96, 851-862.</li>
+                          <li> Hoobler, J. M., <strong>Hu, J.</strong>, & Wilson, M. (2010). <a href="resource/Do Workers Who Experience Confict between the Work.pdf" target="_blank" rel="noopener noreferrer">Do workers who experience conflict between the work and family domains hit a "glass ceiling?": A meta-analytic examination. </a> <em>Journal of Vocational Behavior</em>, 77, 481-494.</li>
+                          <li><strong>Hu, J.</strong> (2012). <a href="" target="_blank" rel="noopener noreferrer"> A team-level social exchange model: The antecedents and consequences of leader-team exchange.</a> University of Illinois at Chicago.</li>
+                          <li>Anand, S., <strong>Hu, J.</strong>, Liden, R. C., & Vidyarthi, P. R. (2011). <a href="resource/Leader–Member Exchange.pdf" target="_blank" rel="noopener noreferrer"> Leader-member exchange: Recent research findings and prospects for the future. </a> <em>The Sage handbook of leadership</em>, 311-325.</li>
+                          <li>Liden, R. C., Panaccio, A., Meuser, J. D., <strong>Hu, J.</strong>, & Wayne, S. (2014). <a href="resource/Servant leadership.pdf" target="_blank" rel="noopener noreferrer"> 17 Servant leadership: antecedents, processes, and outcomes. </a> <em>The Oxford handbook of leadership and organizations</em>, 357-379.</li>
+                          <li>Lepak, D. P., Jiang, K., Han, K., Castellano, W. G., & <strong>Hu, J.</strong> (2012). <a href="resource/STRATEGIC_HRM_MOVING_FORWARD_WHAT_CAN_WE.pdf" target="_blank" rel="noopener noreferrer"> Strategic HRM moving forward: What can we learn from micro perspectives. </a> <em>International review of industrial and organizational psychology</em>, 27.</li>
+                          <li><strong>Hu, J.</strong>, Kang, T., Zhang, J., & Ma, X. (2024). <a href="resource/The chain mediating effect of learning goal distress and excessive learning.pdf" target="_blank" rel="noopener noreferrer"> The chain mediating effect of learning goal distress and excessive learning motivation from unknown locus of control on migrant middle school students' learning anxiety. </a> <em>Acta Psychologica</em>, 248, 104350.</li>
+                          <li>Chaudhry, A., Yuan, L., <strong>Hu, J.</strong>, & Cooke, R. A. (2016). <a href="resource/What matters more.pdf" target="_blank" rel="noopener noreferrer"> What matters more? The impact of industry and organizational factors on organizational culture.</a> <em> Management Decision</em>, 54(3), 570-588.</li>
+                          <li>Jiang, K., <strong>Hu, J.</strong> I. A., Liu, S., & Lepak, D. P. (2017). <a href="resource/Understanding_employees_perceptions_of_h.pdf" target="_blank" rel="noopener noreferrer"> Understanding employees’ perceptions of human resource practices: Effects of demographic dissimilarity to managers and coworkers. </a> <em>Human Resource Management</em>, 56(1), 69-91.</li>
+                        </div>
+                    
+                    </ul>
+                    
+                </div>
+                <div style="text-align: right;">
+                    <button id="showMoreBtn-paper" class="link-button"> 展示更多</button>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+
+      </section><!-- /Hero Section -->
+
+  </main>
+
+
+
+
+  <footer id="footer" class="footer-type light-background">
+
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  
+</body>
+
+<script>
+    document.getElementById("showMoreBtn-paper").addEventListener("click", function() {
+        var moreItems = document.getElementById("more-items");
+        if (moreItems.style.display === "none") {
+            moreItems.style.display = "block";
+            this.textContent = "收起";
+        } else {
+            moreItems.style.display = "none";
+            this.textContent = "展示更多";
+        }
+    });
+</script>
+
+
+</html>
+
+
+
