@@ -2,31 +2,7 @@
 <html lang="en">
   <head>
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        scroll-behavior: smooth;
-      }
 
-      .scroll-container {
-  height: calc(100vh - 80px); /* 减去页脚高度 */
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-}
-
-.fullpage-section {
-  min-height: calc(100vh - 80px); /* 保证每个页面正好占据剩余区域 */
-  scroll-snap-align: start;
-}
-      .scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
-/* 隐藏 Firefox 的滚动条 */
-.scroll-container {
-  -ms-overflow-style: none;  /* IE 10+ */
-  scrollbar-width: none;     /* Firefox */
-}
       .course-link p {
         color: gray !important; 
         font-size: 1.15em;
@@ -132,6 +108,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="publication.html">Publications</a></li>
           <li><a href="media.html">Book & Media</a></li>
           <li><a href="contacts.html">Contact</a></li>
@@ -189,134 +166,9 @@
         </div>
         </section>
         
-        <section id="research" class="fullpage-section" >
-          <!-- 研究兴趣页内容 -->
-          <div class="container text-center p-link" style="margin-bottom: 80px;">
-            <div class="container section-title" >
-              <h2 style="font-family: 'Times New Roman', Times, serif;">Research Interests</h2>
-             
-            </div><!-- End Section Title -->
-            <p class="intro-text mb-2">My research explores key questions at the intersection of leadership, workplace behavior, and digital transformation, including:</p>
-            <ol class="course-link mb-3">
-              <li>What leadership qualities and behaviors drive prosocial impact on employees and teams?</li>
-              <li>What life and work experiences shape leaders into more prosocial, purpose-driven individuals?</li>
-              <li>How do digital technologies—such as ICT and AI—along with remote and hybrid work experiences, impact leadership effectiveness, employee well-being, and team dynamics?</li>
-              <li>What are the unique experiences and challenges of women in leadership positions at the highest levels of organizations?</li>
-            </ol>
-            <p class="intro-text mb-2" >I have published <strong>over 30 articles</strong> presenting my research findings in <strong>top-tier academic journals</strong>, including:</p>
-              <ul class=" pb-0 course-link mb-3" >
-                <li>Academy of Management Journal (AMJ)</li>
-                <li>Journal of Applied Psychology (JAP)</li>
-                <li>Organizational Behavior and Human Decision Processes (OBHDP)</li>
-                <li>Personnel Psychology (PPsych)</li>
-              </ul>
-            <p class="intro-text">My research has been featured in major media outlets such as <strong>Forbes, Fortune, TIME, </strong> and <strong>The Washington Post, </strong> and has garnered <strong>over 10,000 citations</strong> according to Google Scholar.</p>
-          </div>
-
-          <div class="container text-center p-link" style="margin-bottom: 80px;">
-            <div class="container section-title" >
-              <h2 style="font-family: 'Times New Roman', Times, serif;">Teaching</h2>
-             
-            </div><!-- End Section Title -->            <p class="intro-text">I have taught <strong>leadership courses</strong> at all academic levels, 
-              from <strong>EMBA</strong>, <strong>MBA</strong>, and <strong>master’s programs</strong> to <strong>advanced Ph.D. seminars</strong>, at Tsinghua, Ohio State, and Notre Dame. 
-            </p>
-          </div>
-
-          <div class="container text-center p-link" style="margin-bottom: 80px;">
-            <div class="container section-title" >
-              <h2 style="font-family: 'Times New Roman', Times, serif;">Professional Service</h2>
-             
-            </div><!-- End Section Title -->
-            <p class="intro-text mb-2">I currently serve as:</p>
-              <ul class=" pb-0 course-link mb-3" >
-                <li><strong>Associate Editor</strong> of Journal of Applied Psychology (JAP)</li>
-                <li><strong>Deputy Editor</strong> of Management and Organization Review (MOR)</li>
-                <li><strong>Editorial board member</strong> of Academy of Management Journal (AMJ), Organizational Behavior and Human Decision Processes (OBHDP), Personnel Psychology (PPsych), Journal of Management, Journal of Organizational Behavior, and Human Relations</li>
-              </ul>  
-            <p class="intro-text">I actively engage with professional organizations and currently serve as a <strong>Representative-at-Large </strong>for the <strong>Academy of Management’s Organizational Behavior (OB) Division </strong>and <strong>IACMR</strong>.</p>
-          </div>
-
-          <div class="container text-center p-link" style="margin-bottom: 0px;">
-            <div class="container section-title" >
-              <h2 style="font-family: 'Times New Roman', Times, serif;">Honors & International Recognition</h2>
-             
-            </div><!-- End Section Title -->
-              <ul class=" pb-0 course-link mb-3" >
-                <li style="padding-left: 0px;"><strong>Elected Fellow </strong>of the Society for Industrial and Organizational Psychology (SIOP)</li>
-                <li style="padding-left: 0px;"><strong>Ranked among the Top 10 most productive leadership scholars </strong>in Organizational Behavior (2011–2017)</li>
-                <li style="padding-left: 0px;"><strong>Named "Best 40 Under 40 Professor" </strong>by Poets & Quants</li>
-                <li style="padding-left: 0px;"><strong>PRecognized among the Top 2% of scientists worldwide, </strong> according to Stanford University’s research</li>
-                <li style="padding-left: 0px;"><strong>Selected as Mid-Career Standout Scholar </strong>by Network of Leadership Scholars, at Academy of Management</li>
-              </ul>  
-            <p class="intro-text mb-3" >I find my profession both exciting and meaningful. I enjoy uncovering new knowledge about <strong>human behavior in the workplace </strong>and sharing these insights with managers and employees who can apply them in real-world settings.</p>
-            <p class="intro-text">I always welcome and enjoy working with <strong>Ph.D. students and postdoctoral fellows. </strong>If you are interested in applying, please feel free to reach out!</p>
-
-          </div>
-        
-        
-        </section>
+       
       </div>
-      <!-- <section id="hero">
-        
-        <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-          <div class="row justify-content-center">
-            <h1 class=" mb-5" style="font-size: 40pt; font-family: 'Times New Roman', Times, serif;">Jia (Jasmine) Hu</h1>
-            <div class="col-lg-12">
-              <div class="col-12">
-                <div class="portfolio-content pt-6 ps-6 pb-6">
-                  <div class="row">
-                      <div class="col-xl-12 wow fadeInUp" data-wow-delay="0.1s">
-                          <div class="bg-light p-4 col-xl-4 mx-auto" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%; margin-bottom: 50px;">
-                              <img src="assets/img/hujia.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-container">
-                <section id="welcome" class="fullpage-section">
-                  <h3 class="mb-3" style="font-size: 100; font-family: 'Times New Roman', Times, serif;"><strong>Welcome!</strong> </h3>
-                  <div class = "p-link mb-5">
-                    <p class="intro-text mb-3"> Thank you for visiting my website. My name is <strong> Jia (Jasmine) Hu</strong>, and I am a passionate scholar, curious learner, and explorer of human behavior in the workplace. 
-                      My research focuses on understanding how people—especially leaders—can help employees, themselves, and their teams and organizations find meaning and purpose in their work.</p>
-                    <p class="intro-text">I currently serve as the <strong>Citi Chair in International Business</strong> and a<strong> tenured Full Professor of Management</strong> at<strong> Tsinghua University</strong>, 
-                      where I hold a joint appointment at both the<strong> School of Economics and Management</strong> and<strong> Schwarzman College</strong>. 
-                      Before returning to China, I spent 17 years studying and working in the United States. I was a tenured Full Professor at<strong> Ohio State University’s Fisher College of Business</strong>, 
-                      and prior to that, a tenured Associate Professor and Assistant Professor at<strong> the University of Notre Dame’s Mendoza College of Business.</strong> 
-                      I obtained my PhD in Business Administration (Organizational Behavior) from University of Illinois at Chicago. </p>
-                    <p class="intro-text"></p>
-                  </div>
-                </section>
-
-                <section id="research" class="fullpage-section">
-                <h3 class="mb-2" style="font-size: 100; font-family: 'Times New Roman', Times, serif;"  data-aos="fade-up" data-aos-delay="200"><strong>Research Interests</strong> </h3>
-                <div class = "p-link" class="mb-2"  data-aos="fade-up" data-aos-delay="200">
-                  <p class="intro-text mb-3">My research explores key questions at the intersection of leadership, workplace behavior, and digital transformation, including:</p>
-                  <ol class=" pb-0 course-link mb-3">
-                    <li>What leadership qualities and behaviors drive prosocial impact on employees and teams?</li>
-                    <li>What life and work experiences shape leaders into more prosocial, purpose-driven individuals?</li>
-                    <li>How do digital technologies—such as information communication technology (ICT) and artificial intelligence (AI)—along with remote and hybrid work experiences, impact leadership effectiveness, employee well-being, and team dynamics?</li> 
-                    <li>What are the unique experiences and challenges of women in leadership positions at the highest levels of organizations?</li>
-                  </ol>
-
-                  <p class="intro-text mb-3"  data-aos="fade-up" data-aos-delay="200">I have published <strong>over 30 articles</strong> presenting my research findings in <strong>top-tier academic journals</strong>, including:</p>
-                  <ul class=" pb-0 course-link mb-3"  data-aos="fade-up" data-aos-delay="200">
-                    <li>Academy of Management Journal (AMJ)</li>
-                    <li>Journal of Applied Psychology (JAP)</li>
-                    <li>Organizational Behavior and Human Decision Processes (OBHDP)</li>
-                    <li>Personnel Psychology (PPsych)</li>
-                  </ul>
-                  <p class="intro-text">My research has been featured in major media outlets such as <strong>Forbes, Fortune, TIME, </strong> and <strong>The Washington Post, </strong> and has garnered <strong>over 10,000 citations</strong> according to Google Scholar.</p>
-                </div>
-                </section>
-                </div>
-
-                
-              </div>
-          </div>
-        </div>
-
-      </section> -->
+      
   </main>
 
 
